@@ -10,13 +10,14 @@ import java.util.Random;
 @Service
 public class ServiceGame {
 
-    List<String> cards = Arrays.asList("rock", "paper", "scissors", "scissors","rock", "paper","rock", "paper", "scissors");
+    List<String> cards = Arrays.asList("rock", "paper", "scissors", "scissors","rock", "paper", "scissors", "paper","rock");
     Random rnd = new Random();
     public String card() {
 
-        int h1=rnd.nextInt(9);
-        int h2=rnd.nextInt(9);
-        int h3=Math.round((h1+h2)/2);
-        return cards.get(h3);
+        int card1=rnd.nextInt(9);
+        int card2=rnd.nextInt(9);
+        int card3=rnd.nextInt(9);
+        int commonCard=Math.round((card1+card2+card3)/3);
+        return cards.get(commonCard);
     }
 }
