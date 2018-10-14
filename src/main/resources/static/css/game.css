@@ -1,0 +1,22 @@
+.side{
+    margin: 100px 10px 20px 200px;
+}
+.h2_modify2{
+    margin-top: 20px;
+    margin-left: 100px;
+    color: black;
+    text-align: center;
+    font-size: 25px;
+}
+.container{
+
+}
+.h2_modify{
+    color: blue;
+    text-align: center;
+}
+img{
+    cursor: pointer;
+    height:150px;
+    width:150px;
+}
