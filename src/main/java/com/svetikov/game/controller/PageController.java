@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/game")
 public class PageController {
 
-    @GetMapping("/")
+    @GetMapping("")
     public String start(){
         return "start";
     }
